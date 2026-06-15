@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:show_buffering="always"/>
+
+    <Button
+        android:id="@+id/btnPickVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Video"/>
+
+    <Button
+        android:id="@+id/btnPickFace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Wajah"/>
+
+    <Button
+        android:id="@+id/btnStartSwap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mulai Face Swap"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Siap"
+        android:padding="8dp"/>
+
+</LinearLayout>
